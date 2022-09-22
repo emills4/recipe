@@ -1,0 +1,18 @@
+@import url('https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400 ');
+
+body {
+    width: 414px;
+    margin: 0 auto;
+}
+main {
+    background: #F2F2F2
+    ;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+#first img {
+    width: 100%;
+}
