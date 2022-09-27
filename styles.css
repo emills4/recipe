@@ -13,6 +13,106 @@ h1, h2 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
 }
-#first img {
+.first img {
     width: 100%;
 }
+footer img{
+    width: 50%;
+}
+
+.side-dish {
+    background: #7ABFBF;
+}
+
+/* experimenting NAV/menu stuff */
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+/* THIS IS A NIGHTMARE!!!!!!!!!! */
+nav {
+    width: 375px;
+    background-color: #EB5428;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    text-transform: uppercase;
+}
+nav ul {
+    text-align: center;
+}
+nav li {
+    list-style:none;
+  }
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    float: right;
+}
+nav a {
+    text-decoration:none;
+    color:#E3F2FD;
+    text-transform:uppercase;
+  }
+  nav img {
+    visibility: hidden;
+  }
+  nav section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .side-dish {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .side-dish img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+ 
